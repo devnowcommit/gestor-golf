@@ -41,3 +41,10 @@ The goal is to implement the application and deploy it on a free hosting service
 
 - Keep documentation up to date, especially `README.md` with build and deploy instructions.
 - If additional instructions are needed for subdirectories, create new `AGENTS.md` files in those folders.
+
+## Testing Policy
+
+- All new features must be developed using Test-Driven Development (TDD).
+- The preferred testing framework for this project is **Jest**, suitable for a React and Node.js stack.
+- Aim for a minimum code coverage of **90%**.
+- Run coverage checks with `npm test -- --coverage` or an equivalent script to verify compliance.
