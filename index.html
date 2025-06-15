@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor Golf</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gestor Golf</h1>
+  <nav>
+    <button id="training-btn">Training Zone</button>
+    <button id="championship-btn">Championship Zone</button>
+  </nav>
+  <section id="training" class="zone hidden">
+    <h2>Training Zone</h2>
+    <form id="training-form">
+      <input type="text" id="training-input" placeholder="Training note" required />
+      <button type="submit">Add</button>
+    </form>
+    <ul id="training-list"></ul>
+  </section>
+  <section id="championship" class="zone hidden">
+    <h2>Championship Zone</h2>
+    <form id="championship-form">
+      <input type="text" id="championship-input" placeholder="Championship note" required />
+      <button type="submit">Add</button>
+    </form>
+    <ul id="championship-list"></ul>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
