@@ -1,37 +1,25 @@
 # Gestor Golf
 
-Gestor Golf will track all your golf statistics in one place. It has two main sections:
+Gestor Golf is a simple web application for tracking golf statistics. It keeps two independent areas:
 
-- **Training Zone**: Record practice sessions, drills and personal metrics.
-- **Championship Zone**: Log tournament results and competition statistics.
+- **Training Zone** – log practice sessions and drills.
+- **Championship Zone** – register tournament results.
 
-Each area keeps its data separate so practice information stays distinct from championship performance.
+All data is stored in your browser's `localStorage` so information from each zone stays separate.
 
-## Setup
+## Usage
 
-1. Install dependencies:
+Open `index.html` in your browser. Use the navigation buttons to switch between zones. Add notes in each area and click an entry to delete it.
+
+## Development
+
+1. Install dependencies (if your environment allows):
    ```bash
    npm install
    ```
-2. Start the development server:
+2. Run the test suite:
    ```bash
-   npm run dev
+   npm test -- --coverage
    ```
 
-## Testing and Coverage
-
-Run the test suite with:
-```bash
-npm test
-```
-To generate a coverage report use:
-=======
-This project aims to provide a simple web application for managing golf statistics, split between a **Training Zone** and a **Championship Zone**.
-
-## Testing Policy
-
-All features must be developed following Test-Driven Development (TDD) guidelines. The repository uses **Jest** as the preferred testing framework. A minimum test coverage of **90%** is required. Run coverage checks using:
-
-```bash
-npm test -- --coverage
-```
+The project uses **Jest** for testing. A minimum of **90%** coverage is expected, but installation may fail if the environment has no internet access.
