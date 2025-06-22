@@ -1,0 +1,19 @@
+{
+  "name": "gestor-golf",
+  "version": "1.0.0",
+  "description": "Gestor Golf simple static site",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "echo \"static build\"",
+    "deploy": "netlify deploy --dir=. --prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jsdom": "^22.0.0"
+  }
+}

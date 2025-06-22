@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.hero {
+  background: linear-gradient(to right, #2c7, #1a5);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+nav {
+  background: #f0f0f0;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+nav button {
+  margin: 0 5px;
+}
+
+.zone {
+  margin: 20px;
+}
+
+.hidden {
+  display: none;
+}

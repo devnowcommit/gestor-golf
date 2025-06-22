@@ -1,37 +1,40 @@
 # Gestor Golf
 
-Gestor Golf will track all your golf statistics in one place. It has two main sections:
+Gestor Golf is a simple web application for tracking golf statistics. It has two independent areas:
 
-- **Training Zone**: Record practice sessions, drills and personal metrics.
-- **Championship Zone**: Log tournament results and competition statistics.
+- **Training Zone** – log practice sessions and drills.
+- **Championship Zone** – register tournament results.
 
-Each area keeps its data separate so practice information stays distinct from championship performance.
+All data is stored in your browser's `localStorage` so information from each zone stays separate.
 
-## Setup
+## Usage
 
-1. Install dependencies:
+Open `index.html` in your browser. You'll see a landing page with buttons for each zone.
+Select **Training Zone** or **Championship Zone** to begin. Add notes in each area and click an entry to delete it.
+
+## Development
+
+1. Install dependencies (if your environment allows):
    ```bash
    npm install
    ```
-2. Start the development server:
+2. Run the test suite:
    ```bash
-   npm run dev
+   npm test -- --coverage
    ```
 
-## Testing and Coverage
+The project uses **Jest** for testing. A minimum of **90%** coverage is expected, but installation may fail if the environment has no internet access.
 
-Run the test suite with:
+## Deployment
+
+This project is prepared for deployment on **Netlify**. A GitHub Actions workflow `netlify.yml` automatically runs tests and deploys when changes are pushed to the `master` branch.
+
+To use it, configure the following secrets in your repository settings:
+- `NETLIFY_AUTH_TOKEN` – personal token from Netlify
+- `NETLIFY_SITE_ID` – your Netlify site identifier
+
+Alternatively, you can deploy manually with:
 ```bash
-npm test
-```
-To generate a coverage report use:
-=======
-This project aims to provide a simple web application for managing golf statistics, split between a **Training Zone** and a **Championship Zone**.
-
-## Testing Policy
-
-All features must be developed following Test-Driven Development (TDD) guidelines. The repository uses **Jest** as the preferred testing framework. A minimum test coverage of **90%** is required. Run coverage checks using:
-
-```bash
-npm test -- --coverage
+npm run build
+npm run deploy
 ```
